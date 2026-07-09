@@ -1,0 +1,11 @@
+# Ambiente
+/vendor/
+/node_modules/
+
+# Logs e temporários
+*.log
+Thumbs.db
+.DS_Store
+
+# Configurações locais sensíveis (se você criar um arquivo de config separado no futuro)
+.env

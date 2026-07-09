@@ -1,0 +1,66 @@
+ESTOQUEFLOW - GUIA DE INSTALAÇÃO
+
+
+GUIA TÉCNICO DE INSTALAÇÃO E CONFIGURAÇÃO
+Sistema de Controle de Estoque - Estoqueflow
+
+
+REQUISITOS DO SISTEMA
+
+• XAMPP (versão 7.4.30 ou superior)
+  Link: https://sourceforge.net/projects/xampp/
+
+• Navegador web (Chrome, Edge ou Firefox recomendado)
+
+• Arquivo do sistema (pasta "estoqueflow")
+• Banco de dados(MySQL) do sistema (Script "db_estoqueflow.MySQL")
+
+
+PASSO A PASSO DE INSTALAÇÃO
+
+
+1. INSTALAR O XAMPP
+   - Baixe e instale o XAMPP versão 7.4.30.
+   - Abra o XAMPP Control Panel.
+   - Inicie os serviços: Apache e MySQL.
+
+2. CRIAR E IMPORTAR O BANCO DE DADOS
+   - Acesse o phpMyAdmin: http://localhost/phpmyadmin
+   - Clique em "Novo" e crie um banco de dados com o nome: db_estoqueflow
+   - Selecione o banco de dados db_estoqueflow.
+   - Vá na aba "Importar".
+   - Selecione o arquivo db_estoqueflow.sql que está na pasta do sistema.
+   - Clique em "Importar" e aguarde a conclusão.
+
+3. COPIAR OS ARQUIVOS DO SISTEMA
+   - Copie a pasta completa "estoqueflow" para o diretório:
+     C:\xampp\htdocs\
+   - Caminho final deverá ficar assim:
+     C:\xampp\htdocs\estoqueflow
+
+4. ACESSAR O SISTEMA
+   - Abra o navegador e digite o seguinte endereço:
+     http://localhost/estoqueflow/index.php
+
+5. FAZER LOGIN
+   - Usuário: admin
+   - Senha: admin
+
+
+APÓS O PRIMEIRO ACESSO (RECOMENDADO)
+
+• Cadastre categorias, fornecedores e clientes.
+• Realize as primeiras entradas de estoque.
+• Configure os produtos.
+
+
+NOTAS IMPORTANTES
+
+• O sistema foi desenvolvido para PHP 7.4.
+• Não é recomendado usar PHP 8.x sem ajustes.
+• Certifique-se de que o Apache esteja rodando na porta 80 e MySQL na porta 3306.
+• Caso tenha erro de conexão, verifique o arquivo classes/conexao.php.
+
+Suporte: Entre em contato caso encontre algum problema.
+
+© EstoqueFlow - Sistema de Controle de Estoque
